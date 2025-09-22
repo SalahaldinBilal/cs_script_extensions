@@ -1,0 +1,27 @@
+{
+  "name": "@wonfsy/cs-script-extensions",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    "./types": {
+      "types": "./dist/global.ts"
+    },
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@rslib/core": "^0.13.3",
+    "typescript": "^5.9.2"
+  }
+}
