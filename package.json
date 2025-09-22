@@ -2,6 +2,7 @@
   "name": "@wonfsy/cs-script-extensions",
   "version": "0.1.0",
   "type": "module",
+  "private": false,
   "exports": {
     "./types": {
       "types": "./dist/global.ts"
